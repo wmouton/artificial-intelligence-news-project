@@ -2,8 +2,8 @@ import './App.css';
 
 function App() {
 	return (
-		<div className='App'>
-				<p>Alan Artificial Intelligence Project</p>
+		<div>
+			<p>Alan Artificial Intelligence Project</p>
 		</div>
 	);
 }
