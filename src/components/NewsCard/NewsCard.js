@@ -24,30 +24,24 @@ const NewsCard = ({
 						}
 					/>
 					<div>
-						<Typography
-							variant='body2'
-							color='textSecondary'
-							component='h2'
-						></Typography>
-						<Typography
-							variant='body2'
-							color='textSecondary'
-							component='h2'
-						></Typography>
+						<Typography variant='body2' color='textSecondary' component='h2'>
+							{new Date(publishedAt).toDateString()}
+						</Typography>
+						<Typography variant='body2' color='textSecondary' component='h2'>
+							{source.name}
+						</Typography>
 					</div>
 					<Typography gutterBottom variant='h5'></Typography>
 					<CardContent>
-						<Typography
-							variant='body2'
-							color='textSecondary'
-							component='p'
-						></Typography>
+						<Typography variant='body2' color='textSecondary' component='p'>
+							{title}
+						</Typography>
 					</CardContent>
 				</CardActionArea>
 				<CardActions>
 					<Button size='small' color='primary'></Button>
 					<Typography variant='h5' co lor='textSecondary'>
-						{}
+						{description}
 					</Typography>
 				</CardActions>
 			</Card>
