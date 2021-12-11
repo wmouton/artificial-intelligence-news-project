@@ -31,17 +31,21 @@ const NewsCard = ({
 							{source.name}
 						</Typography>
 					</div>
-					<Typography gutterBottom variant='h5'></Typography>
+					<Typography gutterBottom variant='h5'>
+						{title}
+					</Typography>
 					<CardContent>
 						<Typography variant='body2' color='textSecondary' component='p'>
-							{title}
+							{description}
 						</Typography>
 					</CardContent>
 				</CardActionArea>
 				<CardActions>
-					<Button size='small' color='primary'></Button>
+					<Button size='small' color='primary'>
+						Learn More
+					</Button>
 					<Typography variant='h5' co lor='textSecondary'>
-						{description}
+						{i + 1}
 					</Typography>
 				</CardActions>
 			</Card>
