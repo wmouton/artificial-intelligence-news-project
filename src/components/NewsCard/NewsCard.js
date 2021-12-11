@@ -9,7 +9,10 @@ import {
 	Typography,
 } from '@material-ui/core';
 
-const NewsCard = () => {
+const NewsCard = ({
+	article: { description, publishedAt, source, title, url, urlToImage },
+	i,
+}) => {
 	return (
 		<div>
 			<Card>
@@ -38,7 +41,9 @@ const NewsCard = () => {
 				</CardActionArea>
 				<CardActions>
 					<Button size='small' color='primary'></Button>
-					<Typography variant='h5' color='textSecondary'></Typography>
+					<Typography variant='h5' co lor='textSecondary'>
+						{}
+					</Typography>
 				</CardActions>
 			</Card>
 		</div>
