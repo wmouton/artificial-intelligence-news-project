@@ -10,9 +10,9 @@ function App() {
 	useEffect(() => {
 		alanBtn({
 			key: alanKey,
-			onCommand: ({ command }) => {
-				if (command === 'testCommand') {
-					alert('this code was executed');
+			onCommand: ({ command, articles }) => {
+				if (command === 'newHeadlines') {
+					console.log(articles);
 				}
 			},
 		});
@@ -22,11 +22,6 @@ function App() {
 			<h1 style={{ textAlign: 'center' }}>
 				Alan Artificial Intelligence Project
 			</h1>
-			<p style={{ textAlign: 'center' }}>
-				Test Commands: <br />
-				<br /> 'What is this website?' <br /> 'How do I use this website?'{' '}
-				<br /> 'Start a command.'
-			</p>
 		</div>
 	);
 }
