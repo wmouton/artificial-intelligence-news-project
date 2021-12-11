@@ -24,7 +24,8 @@ function App() {
 			</h1>
 			<p style={{ textAlign: 'center' }}>
 				Test Commands: <br />
-				<br /> 'What is this website?' <br /> 'How do I use this website?'
+				<br /> 'What is this website?' <br /> 'How do I use this website?'{' '}
+				<br /> 'Start a command.'
 			</p>
 		</div>
 	);
