@@ -8,16 +8,20 @@ import {
 	Button,
 	Typography,
 } from '@material-ui/core';
+import useStyles from './styles.js';
 
 const NewsCard = ({
 	article: { description, publishedAt, source, title, url, urlToImage },
 	i,
 }) => {
+	const classes = useStyles();
+
 	return (
 		<div>
 			<Card>
 				<CardActionArea>
 					<CardMedia
+						className={classes.media}
 						image={
 							urlToImage ||
 							'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fak5.picdn.net%2Fshutterstock%2Fvideos%2F7816963%2Fthumb%2F3.jpg%3Fi10c%3Dimg.resize(height%3A160)&f=1&nofb=1'
