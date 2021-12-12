@@ -20,9 +20,9 @@ function App() {
 		});
 	}, []);
 	return (
-		<div>
+		<div className='background'>
 			<h1 style={{ textAlign: 'center' }}>
-				Alan Artificial Intelligence Project
+				Alan Artificial Intelligence News Reader
 			</h1>
 			<NewsCards articles={newsArticles} />
 		</div>

@@ -18,8 +18,8 @@ const NewsCard = ({
 
 	return (
 		<div>
-			<Card>
-				<CardActionArea>
+			<Card className={classes.card}>
+				<CardActionArea href={url} target='_blank'>
 					<CardMedia
 						className={classes.media}
 						image={
@@ -27,7 +27,7 @@ const NewsCard = ({
 							'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fak5.picdn.net%2Fshutterstock%2Fvideos%2F7816963%2Fthumb%2F3.jpg%3Fi10c%3Dimg.resize(height%3A160)&f=1&nofb=1'
 						}
 					/>
-					<div>
+					<div className={classes.details}>
 						<Typography variant='body2' color='textSecondary' component='h2'>
 							{new Date(publishedAt).toDateString()}
 						</Typography>
@@ -35,7 +35,7 @@ const NewsCard = ({
 							{source.name}
 						</Typography>
 					</div>
-					<Typography gutterBottom variant='h5'>
+					<Typography className={classes.title} gutterBottom variant='h5'>
 						{title}
 					</Typography>
 					<CardContent>
@@ -44,7 +44,7 @@ const NewsCard = ({
 						</Typography>
 					</CardContent>
 				</CardActionArea>
-				<CardActions>
+				<CardActions className={classes.cardActions}>
 					<Button size='small' color='primary'>
 						Learn More
 					</Button>
