@@ -50,7 +50,7 @@ const App = () => {
             <div className={classes.card}><Typography variant="h5" component="h2">Try saying: <br /><br />Go back</Typography></div>
           </div>
         ) : null}
-        <img src="https://www.freeiconspng.com/uploads/artificial-intelligence-png-29.png" className={classes.alanLogo} alt="logo" />
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ea836578434157.5ca4c05e47945.gif" className={classes.alanLogo} alt="logo" />
       </div>
       <NewsCards articles={newsArticles} activeArticle={activeArticle} />
       <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
