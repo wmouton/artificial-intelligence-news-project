@@ -3,7 +3,6 @@ import { Typography } from '@material-ui/core';
 import wordsToNumbers from 'words-to-numbers';
 import alanBtn from '@alan-ai/alan-sdk-web';
 
-import logo from './images/logo.png';
 import { NewsCards, Modal } from './components';
 import useStyles from './styles';
 
@@ -62,7 +61,6 @@ const App = () => {
             <a className={classes.link} href="https://www.linkedin.com/in/wmouton"> WMouton</a> -
             <a className={classes.link} href="http://twitter.com/l33th_dev"> l33th</a>
           </Typography>
-          <img className={classes.image} src={logo} height="50px" alt="wmouton logo" />
         </div>
       ) : null}
     </div>
