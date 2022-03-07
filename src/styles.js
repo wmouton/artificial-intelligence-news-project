@@ -18,7 +18,11 @@ export default makeStyles((theme) => ({
   },
   link: {
     textDecoration: 'none',
-    color: 'rgba(21, 101, 192)',
+    color: '#729FCF',
+  },
+  link2: {
+    textDecoration: 'none',
+    color: '#FCE94F',
   },
   image: {
     marginLeft: 20,

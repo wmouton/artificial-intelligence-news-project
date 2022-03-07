@@ -57,9 +57,8 @@ const App = () => {
       {!newsArticles.length ? (
         <div className={classes.footer}>
           <Typography variant="body1" component="h4">
-            Created by
-            <a className={classes.link} href="https://www.linkedin.com/in/wmouton"> WMouton</a> -
-            <a className={classes.link} href="http://twitter.com/l33th_dev"> l33th</a>
+          <a className={classes.link2} href=".#"> Created by </a>
+            <a className={classes.link} href="https://github.com/l33th" target="_blank"> WMouton</a>
           </Typography>
         </div>
       ) : null}
