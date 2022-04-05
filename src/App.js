@@ -13,9 +13,11 @@ const App = () => {
 
   const classes = useStyles();
 
+  const APIKEY = process.env.REACT_APP_ARTIFICIAL_INTELLIGENCE_API_KEY;
+
   useEffect(() => {
     alanBtn({
-      key: '1866fc65ff31a5665bb7a16478a609112e956eca572e1d8b807a3e2338fdd0dc/stage',
+      key: APIKEY,
       onCommand: ({ command, articles, number }) => {
         if (command === 'newHeadlines') {
           setNewsArticles(articles);
@@ -58,7 +60,7 @@ const App = () => {
         <div className={classes.footer}>
           <Typography variant="body1" component="h4">
           <a className={classes.link2} href=".#"> Created by </a>
-            <a className={classes.link} href="https://github.com/l33th" target="_blank"> WMouton</a>
+            <a className={classes.link} href="https://github.com/l33th" target="_blank" rel="noopener noreferrer"> WMouton</a>
           </Typography>
         </div>
       ) : null}
