@@ -5,6 +5,7 @@ import alanBtn from '@alan-ai/alan-sdk-web';
 
 import { NewsCards, Modal } from './components';
 import useStyles from './styles';
+import aiLogo from './images/ai.gif';
 
 const App = () => {
   const [activeArticle, setActiveArticle] = useState(0);
@@ -14,7 +15,7 @@ const App = () => {
   const classes = useStyles();
 
   const APIKEY = process.env.REACT_APP_ARTIFICIAL_INTELLIGENCE_API_KEY;
-
+  
   useEffect(() => {
     alanBtn({
       key: APIKEY,
@@ -41,9 +42,10 @@ const App = () => {
         }
       },
     });
-  }, []);
+  }, [APIKEY]);
 
   return (
+    <>
     <div>
       <div className={classes.logoContainer}>
         {newsArticles.length ? (
@@ -52,7 +54,7 @@ const App = () => {
             <div className={classes.card}><Typography variant="h5" component="h2">Try saying: <br /><br />Go back</Typography></div>
           </div>
         ) : null}
-        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ea836578434157.5ca4c05e47945.gif" className={classes.alanLogo} alt="logo" />
+        <img src={aiLogo} className={classes.alanLogo} alt="logo" />
       </div>
       <NewsCards articles={newsArticles} activeArticle={activeArticle} />
       <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
@@ -65,6 +67,7 @@ const App = () => {
         </div>
       ) : null}
     </div>
+    </>
   );
 };
 
